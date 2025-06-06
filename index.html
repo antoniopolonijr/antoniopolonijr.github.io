@@ -19,6 +19,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="./projects/NoCLiques/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <section class="intro">
@@ -39,6 +44,7 @@
           <nav>
             <ul class="menu">
               <li><a href="#projects">Projects</a></li>
+              <li><a href="#courses">Courses</a></li>
               <li><a href="#contact">Contact</a></li>
               <li>
                 <a
@@ -89,14 +95,29 @@
         <div class="blackbox">
           <h2>"TODAY I LEARN TO CODE SO I CAN CREATE THE CODE OF TOMORROW!"</h2>
           <p>
-            Hi, my name is <span class="name">Antonio Poloni</span>. Technology
-            has always been part of my life. Since childhood, I have harbored a
-            passion for games and computers. Currently, I am expanding my skill
-            set in web development through Frontend Masters and freeCodeCamp. I
-            recently completed the
-            <a href="#freeCodeCamp-JAD"
-              >JavaScript Algorithms and Data Structures</a
-            >, a significant step towards my goal of becoming a web developer.
+            Hi, I'm <span class="name">Antonio Poloni</span> from Brazil. I’m a
+            career switcher from Mechanical Engineering, now focused on
+            <span class="featured">Front-end Development</span>. Over the past
+            year, I’ve built a strong foundation in
+            <span class="featured">HTML</span>,
+            <span class="featured">CSS</span>,
+            <span class="featured">JavaScript</span>,
+            <span class="featured">Git</span>,
+            <span class="featured">GitHub</span>,
+            <span class="featured">Tailwind CSS</span>,
+            <span class="featured">React</span>,
+            <span class="featured">Next.js</span>, and
+            <span class="featured">TypeScript</span> through Frontend Masters
+            and freeCodeCamp. I’m dedicated to building accessible, intuitive
+            web applications with clean, maintainable, and scalable code.
+            <br />
+
+            One of my latest projects is
+            <a href="#project-nocliques">NoCliques</a>, a team generator app
+            that creates fair soccer teams by analyzing player skills and
+            positions. I manage the project using GitHub Issues, Pull Requests,
+            Projects, and a branch-based workflow to ensure clear visibility,
+            agile tracking, and smooth team collaboration."
           </p>
         </div>
       </div>
@@ -104,6 +125,165 @@
     <section class="section-projects" id="projects">
       <div class="container">
         <h2>Projects</h2>
+        <div class="project" id="project-nocliques">
+          <div class="blackbox">
+            <h3>NoCliques</h3>
+            <p>
+              NoCliques is a team generator app designed to create fair and
+              balanced teams for casual soccer matches. By analyzing players'
+              skills and positions, it ensures fairness and prevents the
+              formation of "cliques".
+            </p>
+          </div>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <figure>
+                  <a href="https://nocliques.vercel.app/" target="_blank"
+                    ><img
+                      src="./projects/NoCLiques/nocliques-features-screenshot.webp"
+                      alt="Project NoCliques Features Screenshot"
+                  /></a>
+                  <figcaption>
+                    <a href="https://nocliques.vercel.app/" target="_blank">
+                      <h4>Features</h4>
+                      <p>
+                        Skills-based team generation with positional analysis, a
+                        simple and intuitive interface, customizable settings,
+                        multilingual support, project management integration,
+                        mobile-first responsiveness, accessibility-first design,
+                        and clean, maintainable code.
+                      </p>
+                    </a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <a href="https://nocliques.vercel.app/" target="_blank"
+                    ><img
+                      src="./projects/NoCLiques/nocliques-usage-screenshot.webp"
+                      alt="Project NoCliques Usage Screenshot"
+                  /></a>
+                  <figcaption>
+                    <a href="https://nocliques.vercel.app/" target="_blank">
+                      <h4>Usage</h4>
+                      <p>
+                        Select the number of players, input player names,
+                        positions and skill levels. Select the number of teams
+                        and input teams names. Click "Generate Teams" to create
+                        balanced teams. Share results via copy, download, or
+                        share integration.
+                      </p>
+                    </a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <a href="https://nocliques.vercel.app/" target="_blank"
+                    ><img
+                      src="./projects/NoCLiques/nocliques-tech-screenshot.webp"
+                      alt="Project NoCliques Tech Screenshot"
+                  /></a>
+                  <figcaption>
+                    <a href="https://nocliques.vercel.app/" target="_blank">
+                      <h4>Tech Stack</h4>
+                      <p>
+                        Built with Next.js, styled using Tailwind CSS and ShadCN
+                        UI. Features internationalization via next-intl, state
+                        management with React Hooks, and custom TypeScript
+                        algorithms for team balancing. Project management
+                        handled through GitHub Projects.
+                      </p>
+                    </a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="swiper-slide">
+                <figure>
+                  <a href="https://nocliques.vercel.app/" target="_blank"
+                    ><img
+                      src="./projects/NoCLiques/nocliques-logic-screenshot.webp"
+                      alt="Project NoCliques Logic Screenshot"
+                  /></a>
+                  <figcaption>
+                    <a href="https://nocliques.vercel.app/" target="_blank">
+                      <h4>Logic</h4>
+                      <p>
+                        Multi-step algorithm that balances teams by skill level
+                        and position. Goalkeepers are evenly distributed first,
+                        followed by high and low-skill players to ensure parity.
+                        Medium-skill players fill remaining gaps to equalize
+                        team sizes.
+                      </p>
+                    </a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="swiper-slide">
+                <figure>
+                  <a href="https://nocliques.vercel.app/" target="_blank"
+                    ><img
+                      src="./projects/NoCLiques/nocliques-internationalization-screenshot.webp"
+                      alt="Project NoCliques Internationalization Screenshot"
+                  /></a>
+                  <figcaption>
+                    <a href="https://nocliques.vercel.app/" target="_blank">
+                      <h4>Internationalization</h4>
+                      <p>
+                        NoCliques supports multiple languages. You can use the
+                        app in: English (/en) or Portuguese (/pt). The UI adapts
+                        automatically based on your browser’s language or
+                        selected route.
+                      </p>
+                    </a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="swiper-slide">
+                <figure>
+                  <a href="https://nocliques.vercel.app/" target="_blank"
+                    ><img
+                      src="./projects/NoCLiques/nocliques-management-screenshot.webp"
+                      alt="Project NoCliques GitHub Projects Screenshot"
+                  /></a>
+                  <figcaption>
+                    <a href="https://nocliques.vercel.app/" target="_blank">
+                      <h4>Management</h4>
+                      <p>
+                        Development workflow is organized via GitHub Projects,
+                        utilizing a Kanban board for task tracking, along with
+                        structured use of Issues and Pull Requests for
+                        collaborative version control and continuous
+                        integration.
+                      </p>
+                    </a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-projects" id="courses">
+      <div class="container">
+        <h2>Courses</h2>
         <div class="course" id="freeCodeCamp-FDL">
           <div class="blackbox">
             <h3>Front End Development Libraries</h3>
@@ -1781,7 +1961,7 @@
             </a>
           </li>
         </ul>
-        <p><small>&copy; 2024 Antonio Poloni. All rights reserved.</small></p>
+        <p><small>&copy; 2025 Antonio Poloni. All rights reserved.</small></p>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

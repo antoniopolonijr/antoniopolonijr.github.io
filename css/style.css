@@ -52,6 +52,7 @@
     font-size: var(--base-size);
     margin: 0;
     padding: 0;
+    background: var(--blue);
   }
   h1,
   h2,
@@ -222,6 +223,9 @@
   header a:hover svg {
     fill: var(--green);
   }
+  .featured {
+    color: var(--green);
+  }
 
   nav {
     font-family: var(--heading);
@@ -245,6 +249,10 @@
   }
   nav .button:hover {
     color: var(--black);
+  }
+
+  .project {
+    margin: 2rem 0 0 0;
   }
 
   .course {
@@ -347,7 +355,7 @@
 @layer projects {
   .section-projects {
     background-color: var(--blue);
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0 0 0;
     color: var(--white);
   }
   .section-projects h2 {
