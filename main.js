@@ -5,13 +5,30 @@ const hamburgerButton = document.querySelector(
 );
 const nav = document.querySelector(".primary-navigation");
 
+// Toggle the menu when the hamburger button is clicked
 hamburgerButton.addEventListener("click", () => {
-  // check if the navigation is opened
   const isNavOpened = hamburgerButton.getAttribute("aria-expanded");
+  hamburgerButton.setAttribute(
+    "aria-expanded",
+    isNavOpened === "false" ? "true" : "false"
+  );
+});
 
-  if (isNavOpened === "false") {
-    hamburgerButton.setAttribute("aria-expanded", "true");
-  } else {
+// Close the menu when any navigation link is clicked
+nav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburgerButton.setAttribute("aria-expanded", "false");
+  });
+});
+
+// Close the menu when clicking outside the navigation or the hamburger button
+document.addEventListener("click", (event) => {
+  const isNavOpened = hamburgerButton.getAttribute("aria-expanded") === "true";
+  if (
+    isNavOpened &&
+    !nav.contains(event.target) &&
+    !hamburgerButton.contains(event.target)
+  ) {
     hamburgerButton.setAttribute("aria-expanded", "false");
   }
 });
