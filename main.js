@@ -126,3 +126,23 @@ function enableFiltering() {
 }
 
 enableFiltering();
+
+// Scroll-Linked Animation Support Check
+
+if (CSS.supports("animation-timeline: view()")) {
+  // Supported: add a class that triggers the scroll animation
+  document.querySelector(".hero").classList.add("has-scroll-animation");
+} else {
+  // Not supported: optionally remove animation or fallback
+  document.querySelector(".hero").classList.remove("has-scroll-animation");
+}
+
+// Add appropriate class based on support for scroll-linked animations
+const hero = document.querySelector(".hero");
+if (CSS.supports("animation-timeline: view()")) {
+  hero.classList.add("has-scroll-animation");
+  hero.classList.remove("no-scroll-animation");
+} else {
+  hero.classList.add("no-scroll-animation");
+  hero.classList.remove("has-scroll-animation");
+}

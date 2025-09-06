@@ -461,7 +461,10 @@
     text-align: center;
     background-color: var(--background-accent-dark);
     font-size: var(--font-size-md);
+  }
 
+  /* Only add animation if .has-scroll-animation is present */
+  .hero.has-scroll-animation {
     animation: fade-out forwards;
     animation-timeline: view();
     animation-range-start: exit;
