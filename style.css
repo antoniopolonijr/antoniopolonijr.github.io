@@ -117,16 +117,9 @@
     --clr-figma-500: hsl(339, 78%, 18%);
     --clr-vscode-500: hsl(201, 89%, 18%);
     --clr-performance-500: hsl(61, 83%, 18%);
-    /* Express.js — Verde escuro (inspirado no branding, escurecido para AAA) */
     --clr-express-500: hsl(120, 6%, 13%);
-
-    /* Linux — Laranja escuro (baseado no logo Tux, escurecido para AAA) */
     --clr-linux-500: hsl(35, 95%, 18%);
-
-    /* Docker — Azul escuro (inspirado no logo Docker, escurecido para AAA) */
     --clr-docker-500: hsl(205, 83%, 18%);
-
-    /* Nginx — Verde escuro (tom do logo, escurecido para AAA) */
     --clr-nginx-500: hsl(146, 72%, 15%);
 
     --ff-heading: "Outfit", sans-serif;
@@ -672,6 +665,7 @@
     display: none;
   }
 
+  /* Disable animations during resizing to improve performance */
   .resizing * {
     transition: none !important;
     animation: none !important;
