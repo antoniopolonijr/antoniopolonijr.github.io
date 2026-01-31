@@ -149,6 +149,7 @@ I'm ready to collaborate and build amazing digital experiences. Let's connect!
 - **💼 LinkedIn:** [Antonio Poloni](https://www.linkedin.com/in/antonio-br%C3%A1s-poloni-j%C3%BAnior-27148390/)
 - **💻 GitHub:** [@antoniopolonijr](https://github.com/antoniopolonijr)
 - **📄 Resume:** [View My Resume](https://docs.google.com/document/d/1KTaGHp-HwSyNxRPeFZgpH05WgoANplVBxgPvs-kutBQ/edit?usp=sharing)
+- **🌐 Portfolio:** [View My Portfolio](https://antoniopolonijr.github.io)
 
 ---
 
