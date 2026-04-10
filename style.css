@@ -94,6 +94,7 @@
 
     --clr-frontend-masters-500: hsl(8, 57%, 14%);
     --clr-freecodecamp-500: hsl(240, 56%, 9%);
+    --clr-ifrs-500: hsl(127, 43%, 45%);
 
     --clr-html-500: hsl(13, 75%, 21%);
     --clr-javascript-500: hsl(47, 88%, 18%);
@@ -365,7 +366,9 @@
       display: none;
       opacity: 0;
 
-      transition: display 500ms, opacity 500ms;
+      transition:
+        display 500ms,
+        opacity 500ms;
       transition-behavior: allow-discrete;
 
       position: absolute;
@@ -388,7 +391,9 @@
         translate: 0;
         opacity: 1;
 
-        transition: opacity 150ms, translate 450ms;
+        transition:
+          opacity 150ms,
+          translate 450ms;
         transition-delay: var(--delay, 50ms);
 
         &:nth-child(2) {
@@ -576,6 +581,9 @@
       }
       &[data-organization="freecodecamp"] {
         --tag-background: var(--clr-freecodecamp-500);
+      }
+      &[data-organization="ifrs"] {
+        --tag-background: var(--clr-ifrs-500);
       }
 
       &[data-tech="html"] {
